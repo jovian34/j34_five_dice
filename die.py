@@ -9,5 +9,5 @@ class Die():
     def roll(self):
         return random.randint(1, self.size)
     
-    def set_size(self):
-        pass
+    def set_size(self, size: int):
+        self.size = size
