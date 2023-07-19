@@ -8,3 +8,6 @@ class Die():
 
     def roll(self):
         return random.randint(1, self.size)
+    
+    def set_size(self):
+        pass

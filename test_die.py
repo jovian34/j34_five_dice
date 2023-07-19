@@ -23,3 +23,11 @@ def test_std_die_rolls_in_range():
     for i in range(10):
         die_one.roll()
         assert die_one.roll() in [1, 2, 3, 4, 5, 6]
+
+def test_set_size_method_exists():
+    die_one = die.Die()
+    try:
+        die_one.set_size()
+        assert True
+    except:
+        assert False
